@@ -18,5 +18,10 @@ def test_page():
         return render_template('test_page.html', search_text=search)
     return render_template('test_page.html')
 
+
+@app.route('/numberly_page')
+def numberly_page():
+    return render_template('numberly.html')
+
 if __name__ == '__main__':
     app.run(debug=debug)
